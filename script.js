@@ -82,32 +82,3 @@ if (revealEls.length && 'IntersectionObserver' in window) {
 	revealEls.forEach(el => el.classList.add('visible'));
 }
 
-// Validation légère du formulaire
-const form = $('#contact-form');
-const statusEl = $('.form-status');
-if (form) {
-	form.addEventListener('submit', e => {
-		e.preventDefault();
-		statusEl.textContent = '';
-		const data = new FormData(form);
-		const name = String(data.get('name') || '').trim();
-		const email = String(data.get('email') || '').trim();
-		const message = String(data.get('message') || '').trim();
-
-		const errors = [];
-		if (name.length < 2) errors.push('Nom trop court.');
-		if (!/^\S+@\S+\.\S+$/.test(email)) errors.push('Email invalide.');
-		if (message.length < 10) errors.push('Message trop court.');
-
-		if (errors.length) {
-			statusEl.textContent = errors.join(' ');
-			statusEl.style.color = '#b91c1c';
-			return;
-		}
-
-		statusEl.textContent = 'Message prêt à être envoyé (démo côté client).';
-		statusEl.style.color = '#065f46';
-		form.reset();
-	});
-}
-
