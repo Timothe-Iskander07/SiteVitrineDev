@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio — Développeur Web et Logiciel</title>
+    <meta name="description" content="Portfolio minimaliste d'un développeur logiciel: compétences, projets, et contact.">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <a class="skip-link" href="#about" aria-label="Aller au contenu">Aller au contenu</a>
+    <header class="site-header" id="home">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="#home" class="brand-link">
+                    <h1 class="name">Timothé Iskander</h1>
+                    <p class="tagline">Développeur logiciel · Web · Backend · IBM i</p>
+                </a>
+            </div>
+            <nav class="nav" aria-label="Navigation principale">
+                <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Activer le mode sombre">🌙</button>
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">☰</button>
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <p class="hero-kicker">Portfolio développeur</p>
+                <h2>Je conçois des applications <span>simples, fiables</span> et maintenables.</h2>
+                <p class="hero-subtitle">
+                    Développeur logiciel orienté qualité de code et pragmatisme, capable de travailler
+                    aussi bien sur des interfaces web modernes que sur des systèmes d’entreprise
+                    (IBM i, RPG).
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-meta">
+                <ul>
+                    <li><span>Basé à :</span> Caen, France</li>
+                    <li><span>Recherche :</span> Poste en Développement</li>
+                    <li><span>Domaines :</span> Web, Backend, IBM i / RPG</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="section reveal">
+            <div class="container about-grid">
+                <div class="about-text">
+                    <h2>À propos de moi</h2>
+                    <p>
+                        Développeur logiciel passionné par la création de solutions robustes et performantes.
+                        J'aime concevoir des interfaces sobres et des backends fiables, du web moderne aux systèmes d'entreprise.
+                    </p>
+                </div>
+                <figure class="about-photo">
+                    <img src="PhotoPro/TimIskPro.jpg" alt="Photo professionnelle" width="320" height="320" loading="lazy">
+                    <figcaption>Timothé Iskander</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="skills" class="section alt reveal">
+            <div class="container">
+                <h2>Compétences</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Web moderne</h3>
+                        <ul>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>TypeScript, React, Vue.js</li>
+                            <li>Intégration responsive</li>
+                            <li>Traduction de Sites Internet</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Backend & APIs</h3>
+                        <ul>
+                            <li>Java / Springboot</li>
+                            <li>C#  / ASP.NET</li>
+                            <li>Python / Django</li>
+                            <li>PHP / Symfony</li>
+                            <li>Conception d’API</li>
+                            <li>Tests et robustesse</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Legacy / Entreprise</h3>
+                        <ul>
+                            <li>Arcad</li>
+                            <li>RPG sur IBM i</li>
+                            <li>PHLSOFT</li>
+                            <li>Maintenance Applicative</li>
+                            <li>Modernisation Progressive</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Versioning & CI/CD</h3>
+                        <ul>
+                            <li>Git, GitLab</li>
+                            <li>Branches, Code Review, Documentation</li>
+                            <li>Pipelines CI/CD (build, tests et déploiements)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Expert EDI</h3>
+                        <ul>
+                            <li>Échanges structurés (EDIFACT)</li>
+                            <li>Mapping de Données</li>
+                            <li>Fiabilisation et supervision des flux Entrants et Sortants</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Gestion de projet</h3>
+                        <ul>
+                            <li>Collaboration sur un Projet</li>
+                            <li>Diagrammes Utilisateurs (Cas d'usage)</li>
+                            <li>Modèles Conceptuels de Données (MCD)</li>
+                            <li>Modèles Logiques de Données (MLD)</li>
+                            <li>Gestion de projet (Scrum, Kanban)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section alt reveal">
+            <div class="container">             
+                <div class="links">
+                    <a href="mailto:timotheiskander07@gmail.com">timotheiskander07@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/timothé-iskander-6b1b00154/" rel="noopener" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> Timothé Iskander. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
